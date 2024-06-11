@@ -1,4 +1,4 @@
-function sum(a, b) {
+var sumFunction = function sum(a, b) {
 
     console.log("Sum = " + (a + b));
     
@@ -6,27 +6,31 @@ function sum(a, b) {
 
 }
 
+let i = sumFunction(5,5);
+console.log(i);
 
-var a = 5;
-var b = 10;
-var s = sum(a, b);
-console.log('return = ' + (s));
+//  var sum = sumFunction;
 
-function login(loginId, password) {
+// var a = 5;
+// var b = 10;
+// var s = sum(a, b);
+// console.log('return = ' + (s));
 
-    if (loginId == null && password == null) {
+// function login(loginId, password) {
 
-        document.write('<h1 style="color:red">loginId is required</h1>' + '<h1 style="color:red">Password is required</h1>')
+//     if (loginId == null && password == null) {
 
-    } else if (loginId == 'abc@gmail.com' && password == 'pass123') {
+//         document.write('<h1 style="color:red">loginId is required</h1>' + '<h1 style="color:red">Password is required</h1>')
 
-        document.write('<h1 style="color:green">Login successfully</h1>');
+//     } else if (loginId == 'abc@gmail.com' && password == 'pass123') {
 
-    }
+//         document.write('<h1 style="color:green">Login successfully</h1>');
 
-}
+//     }
 
-var loginId = 'abc@gmail.com';
-var password = 'pass123';
+// }
 
-login(loginId, password);
+// var loginId = 'abc@gmail.com';
+// var password = 'pass123';
+
+// login(loginId, password);
