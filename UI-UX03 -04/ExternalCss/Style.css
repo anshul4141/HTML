@@ -1,0 +1,24 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: gray;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    color: blue;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}

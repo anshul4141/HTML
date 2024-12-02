@@ -1,0 +1,6 @@
+.gradient-box {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to bottom, red, yellow);
+  }
+  
