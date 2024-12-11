@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (let i = 1; i <= 5; i++) {
+
+            document.write("<h1>" + i + " Hello World</h1>");
+
+        }
+        document.write("<hr>");
+
+        for (let i = 5; i >= 1; i--) {
+
+            document.write("<h1>" + i + "</h1>");
+
+        }
+        document.write("<hr>");
+        document.write("<h1> For in loop return index of an array</h1>");
+        let name = ["Aryan", "Abhishek", "Shivkant", "Avnish", 54, 65];
+        for (let index in name) {
+            console.log(index);
+            document.write("<h1>" + name[index] + "</h1>");
+        }
+
+        obj = {id:1, name:"Aryan", salary:50000};
+        console.log(obj.salary)
+        for(let key in obj){
+
+            document.write("<h1>" + obj[key] + "</h1>");
+
+        }
+
+        document.write("<hr>");
+        document.write("<h1> For of loop return value of an array</h1>");
+
+        for (let value of name) {
+            document.write("<h1>" + value + "</h1>");
+        }
+
+    </script>
+</body>
+
+</html>
