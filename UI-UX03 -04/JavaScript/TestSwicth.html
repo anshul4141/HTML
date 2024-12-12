@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let weekday = window.prompt("Enter Weekday");
+
+        document.write("<h1>" + weekday + "</h1>");
+
+        switch (weekday.toLowerCase()) {
+            case "monday":
+                document.write("<h1>First day of week</h1>");
+                break;
+            case "tuesday":
+                document.write("<h1>Second day of week</h1>");
+                break;
+            case "wednesday":
+                document.write("<h1>Third day of week</h1>");
+                break;
+            case "thursday":
+                document.write("<h1>Fourth day of week</h1>");
+                break;
+            case "friday":
+                document.write("<h1>Fifth day of week</h1>");
+                break;
+            case "saturday":
+                document.write("<h1>Sixth day of week</h1>");
+                break;
+            case "sunday":
+                document.write("<h1>Seventh day of week</h1>");
+                break;
+            default:
+                document.write("<h1>eighth is default case</h1>")
+        }
+
+    </script>
+</body>
+
+</html>
