@@ -9,36 +9,23 @@
 
 <body>
     <script>
-        let weekday = window.prompt("Enter Weekday");
+         let firstNo = Number(window.prompt("Enter First Number"));
+         let secondNo = Number(window.prompt("Enter Second Number"));
+        let opr = window.prompt("Enter Your Opr like +, -, *, /");
+        document.write(`<h1>${firstNo}</h1>`);
+        document.write(`<h1>${secondNo}</h1>`);
 
-        document.write("<h1>" + weekday + "</h1>");
-
-        switch (weekday.toLowerCase()) {
-            case "monday":
-                document.write("<h1>First day of week</h1>");
+        switch (opr) {
+            case "+":
+                document.write((firstNo + secondNo));
                 break;
-            case "tuesday":
-                document.write("<h1>Second day of week</h1>");
+            case "-":
+                document.write(firstNo - secondNo );
                 break;
-            case "wednesday":
-                document.write("<h1>Third day of week</h1>");
-                break;
-            case "thursday":
-                document.write("<h1>Fourth day of week</h1>");
-                break;
-            case "friday":
-                document.write("<h1>Fifth day of week</h1>");
-                break;
-            case "saturday":
-                document.write("<h1>Sixth day of week</h1>");
-                break;
-            case "sunday":
-                document.write("<h1>Seventh day of week</h1>");
-                break;
-            default:
-                document.write("<h1>eighth is default case</h1>")
+            default : {
+                document.write(`<h1>invalid opr......</h1>`);
+            }
         }
-
     </script>
 </body>
 

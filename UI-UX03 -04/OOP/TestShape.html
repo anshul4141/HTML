@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="shape.js"></script>
+
+    <script>
+        let shape = new Shape();
+        shape.setColor("<h1>Red</h1>");
+        document.write("<h1>"+shape.getColor()+"</h1>");
+
+        shape.setBorderWidth(2);
+        document.write("<h1>"+shape.getBorderWidth()+"</h1>");
+        shape.area();
+    </script>
+</body>
+</html>
