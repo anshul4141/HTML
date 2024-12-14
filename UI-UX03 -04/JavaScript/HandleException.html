@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 5;
+        let b = 0;
+
+        try {
+
+            if (b === 0) {
+                throw new Error("Number is no div by 0");
+            } else {
+                document.write(`<h1>${a / b}</h1>`)
+            }
+
+        } catch (error) {
+
+            document.write(`<h1> ${error}</h1><br>`);
+            document.write(`<h1> ${error.name}</h1><br>`);
+            document.write(`<h1> ${error.message}</h1>`);
+
+        } finally {
+            document.write("<h1>I am finally...</h1>");
+        }
+    </script>
+</body>
+
+</html>
