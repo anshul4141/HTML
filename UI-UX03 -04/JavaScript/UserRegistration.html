@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <script src="InputVaidation.js"></script>
+    <form name="SignUp">
+        <table>
+            <tr>
+                <th>FirstName</th>
+                <td><input type="text" name="firstName" value="" onchange="isName()"></td>
+                <td><span id="isName" style="color: red;"></span></td>
+            </tr>
+            <tr>
+                <th>age</th>
+                <td><input type="text" name="age" value="" onchange="isAge()"></td>
+                <td><span id="isAge" style="color: red;"></span></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" name="opr" value="save"></td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>
